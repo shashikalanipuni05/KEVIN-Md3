@@ -44,5 +44,54 @@ await conn.sendMessage (form{audio:{url:downloadUrl}mimetype: "audio/mpeg",{quot
 }catch (e) {
 console.log(e)
 reply(`${e}`)
+}
+})
+
+//============video_dl===============
+
+cmd({
+    pattern: "video",
+    desc: "Download videos",
+    category: "download ",
+    filename: __filename
+    
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if (!p) return reply ("please give me url or titel")
+const search = await yts(q)
+const data = search.videos[o];
+const url = data.url 
+
+let dese = ` 🌟 KEVIN-MD VIDEO DOWNLOADER 🌟  
+
+
+title: ${data.title}
+description: {data.discription}
+time: ${data.timestamp}
+ago: ${data.ago}
+views: ${data.views}
+
+MADE BY KEVIN-MD
+`
+await conn.sendMessage (from,{image:{url: data.thumbnail},caption:desc}{quoted:mek}),
+    // download videi
+
+
+let down = await fg.ytv(url)
+let downloadUrl = down.dl_url
+
+// send vudeo message
+await conn.sendMessage (form{video:{url:downloadUrl}mimetype: "video/mp4,{quoted:mek});
+await conn.sendMessage (form{document:{url:downloadUrl}mimetype: "video/mp4",fileName:},{quoted:mek});
+
+
+                             
+
+                            
+}catch (e) {
+console.log(e)
+reply(`${e}`)
+}
 })
 
