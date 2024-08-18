@@ -34,8 +34,9 @@ await conn.sendMessage (from,{image:{url: data.thumbnail},caption:desc}{quoted:m
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
-// send audio message
+// send audio + document message
 await conn.sendMessage (form{audio:{url:downloadUrl}mimetype: "audio/mpeg",{quoted:mek});
+await conn.sendMessage (form{document:{url:downloadUrl}mimetype: "audio/mpeg",fileName:data.title + "mp3",caption:"KEVIN-MD AODIO DOWNLOAD...🌟"},{quoted:mek});
 
 
                              
@@ -81,9 +82,9 @@ await conn.sendMessage (from,{image:{url: data.thumbnail},caption:desc}{quoted:m
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
-// send vudeo message
-await conn.sendMessage (form{video:{url:downloadUrl}mimetype: "video/mp4,{quoted:mek});
-await conn.sendMessage (form{document:{url:downloadUrl}mimetype: "video/mp4",fileName:},{quoted:mek});
+// send vudeo + document message
+await conn.sendMessage (form{video:{url:downloadUrl}mimetype: {"video/mp4"},{quoted:mek});
+await conn.sendMessage (form{document:{url:downloadUrl}mimetype: "video/mp4",fileName:data.title + "mp4",caption:"KEVIN-MD VIDIO DOWNLOAD...🌟"},{quoted:mek});
 
 
                              
