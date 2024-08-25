@@ -24,4 +24,4 @@
 
 ### 2. GET SESSION ID HERE
  
-<a href="[https://anita-server-1.onrender.com/pair](https://opulent-waddle-v6ggr447rr99h956-8000.app.github.dev/)"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>   
+<a href="[https://anita-server-1.onrender.com/pair](https://opulent-waddle-v6ggr447rr99h956-8000.app.github.dev)"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>   
