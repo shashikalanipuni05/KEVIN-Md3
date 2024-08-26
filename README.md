@@ -25,7 +25,7 @@
 </a>
 
 
-### 2. Get SESSION
+### 2. GET SESSION
 
 <a
 href="https://obscure-sniffle-5vv97r59g4c4pwp-8000.app.github.dev/"><img src="https://img.shields.io/badge/GET-SESSION-black" alt="GET SESSION" width="250">
