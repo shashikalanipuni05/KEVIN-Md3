@@ -33,4 +33,4 @@
 
 ### SERVER 1
  
-<a href="https://anita-server-1.onrender.com/pair"><img src="[https://img.shields.io/badge/PAIR_CODE-blue(https://obscuresniffle5vv97r59g4c4pwp-8000.app.github.dev/)" alt="Click Here to Get Pair-Code" width="110"></a>   
+<a href='https://obscuresniffle5vv97r59g4c4pwp-8000.app.github.dev/' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork This Repo-black?style=for-the-badge&logo=git&logoColor=white'/></a>   
