@@ -38,15 +38,15 @@ const port = process.env.PORT || 8000;
 
 //=============================================
 
-async function connectToWA() {
-//====================connect mongodb====================================
+//====================connect mongodb==========
+async function connectToWA(){
 const connectDB = require(`./lib/mongodb`)
 comnectDB():
-//=======================================================================
+//=============================================
 const {readEnv} = require('.lib/database')
 const config = await reaeEnv();
 const prefix = config.PREFIX
-//========================================================================
+//==============================================
 
 console.log("Connecting wa bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
