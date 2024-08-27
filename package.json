@@ -9,7 +9,7 @@
     "restart": "pm2 restart kevinbot"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "4.5.0",
+    "@whiskeysockets/baileys": "6.6.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "pino": "^7.0.5",
     "pm2": "^5.2.0",
