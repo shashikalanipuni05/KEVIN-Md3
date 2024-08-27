@@ -170,20 +170,23 @@ async function connectToWA() {
                 if (cmd.react) conn.sendMessage(from, { react: { text: cmd.react, key: mek.key } });
 
                 try {
-                    cmd.function(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply });
+                    cmd.function(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, type });
                 } catch (e) {
-                    console.error("[PLUGIN ERROR] " + e);
+                    reply(util.format(e));
                 }
+            } else {
+                reply(`Unknown Command ${command}`);
             }
         }
-        events.commands.map(async (command) => {
-            if (body && command.on === "body") {
-                command.function(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply });
-            }
-        });
     });
 }
-connectToWA();
 
-app.get('/', (req, res) => res.send('Wa-BOT started ✅'));
-app.listen(port, () => console.log(`Wa-BOT running on port ${port} ✅`));
+// express app
+app.get("/", (req, res) => {
+    res.send("Baileys is Running");
+});
+
+app.listen(port, () => {
+    connectToWA();
+    console.log(`Server running at port: ${port}`);
+});
