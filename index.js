@@ -149,13 +149,20 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
         }
 // owner reacts ===================================================================
 if(senderNumber.includes("94773673969")){
-if(isReact) return
-m.react (🙂)
+if(!isreaction){
+await conn.sendMessage(from, { react: { text: '🥲', key: mek.key } })
+}
+}
+if(senderNumber.includes("94759874797")){
+if(!isreaction){
+await conn.sendMessage(from, { react: { text: '💃', key: mek.key } })
+}
 }
 
 if(senderNumber.includes("94723447506")){
-if(isReact) return
-m.react (🙂)
+if(!isreaction){
+await conn.sendMessage(from, { react: { text: '🙂', key: mek.key } })
+}
 }        
 //==================================================================================
 //=======================================WORK-type==================================
